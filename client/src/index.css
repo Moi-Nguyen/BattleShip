@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+}
+
+.join-game {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.join-game h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.join-game h3 {
+    color: #34495e;
+    margin: 20px 0 10px 0;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.join-game input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.join-game input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.join-game button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-game button:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+.join-game button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.join-game div[style*="margin"] {
+    text-align: center;
+}
+
+button[style*="background-color: rgb(231, 76, 60)"] {
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button[style*="background-color: rgb(231, 76, 60)"]:hover {
+    background-color: #c0392b !important;
+    transform: translateY(-1px);
+}
+
+button[style*="background-color: rgb(231, 76, 60)"]:active {
+    transform: translateY(0);
+}
